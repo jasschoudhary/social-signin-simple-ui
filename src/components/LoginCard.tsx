@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import SocialLoginButton from "./SocialLoginButton";
-import { Github, Google } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 
 const LoginCard = () => {
   const handleGoogleLogin = () => {
@@ -24,7 +24,7 @@ const LoginCard = () => {
       </CardHeader>
       <CardContent className="grid gap-4">
         <SocialLoginButton 
-          icon={<Google size={20} />}
+          icon={<Mail size={20} />}
           provider="Google"
           onClick={handleGoogleLogin}
           className="bg-white hover:bg-gray-50 text-black border border-gray-300"
